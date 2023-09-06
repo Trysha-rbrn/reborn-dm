@@ -1,0 +1,51 @@
+enum {
+	DIALOG_REGISTER,
+	D_LOGIN,
+	DIALOG_NOTHING,
+	DIALOG_DM,
+	DIALOG_REPORT,
+	DIALOG_HELP,
+	DIALOG_NCOLOR,
+    dialog_CHOOSELANG,
+    dialog_ADMINSTATS,
+    dialog_CHANGEPASS,
+    dialog_CADMINSTATS,
+    D_ACODE
+};
+
+enum pInfo
+{
+	pSQLID,
+    pPass,
+    pEmail[128],
+    pPlayerIP[24],
+    pCash,
+    pAdmin,
+    pKills,
+    pDeaths,
+    pSkin,
+    pMuted,
+    pJailed,
+    pUbistva,
+    pSmrti,
+    pRank,
+    pLang,
+    Float:pDutyTime,
+    pBans,
+    pKicks,
+    pJails,
+    pMutes,
+    Float:pHours,
+    pPremium,
+    pInClan,
+    pRegistrationDate[80],
+    pClanName[24],
+    pClanLeader[24],
+    pClanMembers,
+    pCreatedClan,
+    pACode,
+    pColor
+}
+new 
+    PI[MAX_PLAYERS][pInfo],
+    PlayerWhoInvite;
